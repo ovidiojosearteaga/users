@@ -23,13 +23,6 @@ describe('AppComponent', () => {
   it(`should have as title 'users'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('users');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('users app is running!');
+    expect(app.title).toEqual('Users');
   });
 });
