@@ -1,0 +1,16 @@
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  button {
+    margin: 0 7px;
+    display: flex;
+
+    .logo-socials {
+      width: 20px;
+      display: inline-block;
+      margin-right: 3px;
+    }
+  }
+}

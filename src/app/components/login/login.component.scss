@@ -1,0 +1,19 @@
+mat-card {
+  margin-top: 7px;
+
+  mat-card-title {
+    font-size: 1.2em;
+  }
+
+  mat-card-content {
+    mat-form-field {
+      display: block;
+    }
+  }
+  
+  button {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+}

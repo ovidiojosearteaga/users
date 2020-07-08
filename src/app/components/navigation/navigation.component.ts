@@ -16,7 +16,8 @@ export class NavigationComponent {
 
   menu:MenuItem[] = [
     { path: '/', title: 'Home'},
-    { path: '/login-register', title: 'Login - Register'},
+    { path: '/login', title: 'Login'},
+    { path: '/register', title: 'Register'},
     { path: '/profile', title: 'Profile'},
     { path: '/users', title: 'Users List'}, 
   ];
