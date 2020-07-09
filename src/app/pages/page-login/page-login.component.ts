@@ -19,7 +19,7 @@ export class PageLoginComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    setTimeout(() => this.toState = 'showLogin', 500);
+    setTimeout(() => this.toState = 'showLogin', 300);
   }
 
 }

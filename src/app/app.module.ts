@@ -17,6 +17,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
@@ -27,6 +29,7 @@ import { PageLoginComponent } from './pages/page-login/page-login.component';
 import { PageHomeComponent } from './pages/page-home/page-home.component';
 import { PageProfileComponent } from './pages/page-profile/page-profile.component';
 import { PageUserListComponent } from './pages/page-user-list/page-user-list.component';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -56,6 +59,8 @@ import { PageUserListComponent } from './pages/page-user-list/page-user-list.com
     MatTabsModule,
     MatFormFieldModule,
     MatInputModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

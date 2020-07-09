@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageRegisterComponent implements OnInit {
 
+  toState:string = 'hideRegister';
+
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => this.toState = 'showRegister', 300);
   }
 
 }

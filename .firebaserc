@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "notifications-d7ec2": {
+      "hosting": {
+        "users": [
+          "notifications-d7ec2"
+        ]
+      }
+    }
+  }
+}
