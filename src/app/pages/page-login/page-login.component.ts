@@ -8,18 +8,17 @@ import { state, trigger, style, transition, animate } from '@angular/animations'
 })
 export class PageLoginComponent implements OnInit {
 
-    toState:string = 'hideLogin';
-
-    isOpen = true;
-  
-    toggle() {
-      this.isOpen = !this.isOpen;
-    }
-
-  constructor() { }
+  toState:string = 'hideLogin';
 
   ngOnInit(): void {
-    setTimeout(() => this.toState = 'showLogin', 300);
+    this.changeAnimationState();
+  }
+
+  private changeAnimationState() : void {
+    setTimeout(
+      () => this.toState = 'showLogin', 
+      1
+    );
   }
 
 }

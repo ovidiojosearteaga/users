@@ -12,7 +12,14 @@ export class PageRegisterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    setTimeout(() => this.toState = 'showRegister', 300);
+    this.changeAnimationState();
+  }
+
+  private changeAnimationState() : void {
+    setTimeout(
+      () => this.toState = 'showRegister', 
+      1
+    );
   }
 
 }
